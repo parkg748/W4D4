@@ -1,0 +1,8 @@
+<h3><%= @album.title %>, <%= @album.year %></h3>
+<br>
+<form action="<%= album_url(@album) %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input class="buttoncolor" type="submit" name="" value="Edit Album">
+</form>
+<a href="<%= new_track_url %>">Add Album</a>

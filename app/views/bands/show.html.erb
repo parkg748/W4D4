@@ -1,0 +1,9 @@
+<h3><%= @band.name %></h3>
+<br>
+<a href="<%= edit_band_url(@band) %>">Edit Artist</a>
+<!-- <form action="<%= edit_band_url(@band) %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input class="buttoncolor" type="submit" name="" value="Edit Artist">
+</form> -->
+<a href="<%= new_band_album_url(@band) %>">Add Album</a>
